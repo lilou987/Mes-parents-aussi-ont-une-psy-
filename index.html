@@ -6,6 +6,9 @@
   <title>Cabinet de Psychologie</title>
 
   <style>
+    html {
+  scroll-behavior: smooth;
+}
     body {margin: 0;
   font-family: Arial;
   background: linear-gradient(to right, #cfd9df, #e2ebf0);
@@ -49,13 +52,17 @@ h2 {
       margin: auto;
     }
 
-    .box {
+   .box {
   background: white;
   margin: 20px auto;
   padding: 20px;
   border-radius: 15px;
   max-width: 500px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1s ease forwards;
 }
 
     a {
@@ -121,6 +128,12 @@ h2 {
 
 .menu a:hover {
   color: #4a90e2;
+}
+    @keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
   </style>
 </head>
@@ -193,14 +206,20 @@ dans votre bien-être mental, en toute confidentialité.
   <h2>📆 Créneaux disponibles</h2>
 
 <p>Matin :</p>
-<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">9h00</a>
-<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">10h00</a>
-<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">11h00</a>
+<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">11h30</a>
+<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">12H00</a>
+<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">12h30</a>
 
 <p>Après-midi :</p>
-<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">14h00</a>
+<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">14h30</a>
 <a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">15h00</a>
-<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">16h00</a>
+<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">16h30</a>
+
+<p>Soir :</p>
+<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">18h30</a>
+<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">19h45</a>
+<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">20h30</a>
+      
 
 </div>
     <div class="box">
