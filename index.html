@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cabinet de Psychologie</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Cabinet de Psychologie</title>
+
   <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background: linear-gradient(to right, #a8edea, #fed6e3);
-      color: #333;
-      text-align: center;
-    }
+    body {margin: 0;
+  font-family: Arial;
+  background: linear-gradient(to right, #a8edea, #fed6e3);
+  color: white;
+  text-align: center;
+}
+    .container {
+  padding: 60px 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+      .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: white;
+  color: #333;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #ddd;
+}
 
     .container {
       padding: 80px 20px;
@@ -29,14 +49,13 @@
     }
 
     .box {
-      background: white;
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 15px;
-      width: 90%;
-      max-width: 350px;
-      color: #333;
-    }
+  background: rgba(255, 255, 255, 0.15);
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 500px;
+  backdrop-filter: blur(10px);
+}
 
     a {
       display: block;
@@ -66,6 +85,24 @@
     button:hover {
       background: #357bd8;
     }
+    h1 {
+  font-size: 40px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .box {
+    margin: 15px;
+    padding: 20px;
+  }
+}
   </style>
 </head>
 
@@ -73,26 +110,70 @@
 
   <div class="container">
     <h1>Cabinet de Psychologie 🧠</h1>
-
-    <p>
-      Bienvenue sur un espace d’écoute bienveillant et confidentiel.
-      Vous pouvez prendre rendez-vous ou me contacter facilement.
-    </p>
+    <p style="font-size:18px; max-width:600px; margin:auto;">
+    Vous n’êtes pas seul(e).  
+    Prenez un moment pour vous en toute sécurité et confidentialité.
+  </p>
+<p style="font-size:18px; max-width:600px; margin:auto;">
+Un espace d’écoute bienveillant pour vous accompagner
+dans votre bien-être mental, en toute confidentialité.
+</p>
 
     <div class="box">
   <h2>📅 Prendre rendez-vous</h2>
   <p>Clique ci-dessous pour choisir un créneau et réserver une séance.</p>
 
-  <a href="https://forms.gle/MbPcuHG54QxdZSWk6" target="_blank">
+  <a href="https://forms.gle/MbPcuHG54QxdZSWk6" target="_blank" class="btn">
     Réserver un rendez-vous
   </a>
 </div>
 
 
-    <button onclick="alert('Merci de votre confiance ❤️')">
-      Message important
-    </button>
-  </div>
+    <button onclick="alert('Votre bien-être est ma priorité 🧠')">
+  💬 Message important
+</button>
+    <div class="box">
+  <h2>👤 À propos</h2>
+  <p>
+  Psychologue spécialisé(e) dans le bien-être mental.
+  Consultations en ligne simples et confidentielles.
+  </p>
+</div>
+  <div class="box">
+  <h2>🔒 Confidentialité</h2>
+  <p>
+  Toutes les consultations sont confidentielles et sécurisées.
+  </p>
+</div>
+    <div class="box">
+  <h2>⭐ Témoignages</h2>
+
+  <p>“Je me sens beaucoup mieux depuis que je consulte.”</p>
+  <p>“Une écoute bienveillante et professionnelle.”</p>
+  <p>“Je recommande à 100%.”</p>
+
+</div>
+    <div class="box">
+  <h2>🕒 Horaires</h2>
+  <p>Vendredi : 17h30 - 21h30</p>
+  <p>Samedi : 11h30 - 21h30</p>
+  <p>Dimanche : 11h30 - 19h45</p>
+  <p>Vacances : 17h30 - 21h45</p>
+</div>
+    <div class="box">
+  <h2>📅 Créneaux disponibles</h2>
+  <p>Fin de matinée : 11h30 / 12h00 / 12h30</p>
+  <p>Après-midi : 14h30 / 15h00 / 15h30</p>
+  <p>Soir : 18h30 / 19h45 / 20h30</p> 
+</div>
+    <div class="box">
+  <h2>🔐 Mentions légales</h2>
+  <p>
+  Ce site vous permet de parler a un psychologue 
+    professionel.
+  </p>
+</div>
+
 
   <!-- CHAT TAWK.TO -->
   <script type="text/javascript">
