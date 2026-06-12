@@ -2,116 +2,52 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Cabinet de Psychologie</title>
+  <title>Espace Sérénité</title>
 
   <style>
-    html {
-  scroll-behavior: smooth;
-}
-    body {margin: 0;
-  font-family: Arial;
-  background: linear-gradient(to right, #cfd9df, #e2ebf0);
-  color: #333;
-  text-align: center;
-}
-    .container {
-  padding: 60px 20px;
-}
-
-h2 {
-  margin-bottom: 10px;
-}
-      .btn {
-  display: inline-block;
-  margin: 8px;
-  padding: 12px 25px;
-  background: linear-gradient(to right, #4a90e2, #357abd);
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background: #357abd;
-  transform: scale(1.05);
-}
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #f5f7fa;
+      color: #333;
+      text-align: center;
+    }
 
     .container {
-      padding: 80px 20px;
+      padding: 40px 20px;
     }
+    <div class="box">
+  <h2>📅 Prendre rendez-vous</h2>
+  <a href="TON LIEN GOOGLE FORMS" target="_blank" class="btn">
+    Réserver
+  </a>
+</div>
 
-    h1 {
-      font-size: 42px;
+    .box {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 500px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      opacity: 0;
+transform: translateY(30px);
+transition: 0.6s;
     }
+    .box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-    p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: auto;
-    }
-
-   .box {
-  background: white;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 15px;
-  max-width: 500px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-
-  opacity: 0;
-  transform: translateY(30px);
-  opacity: 0;
-transform: translateY(20px);
-transition: all 0.6s ease;
-    a {
-      display: block;
+    .btn {
+      display: inline-block;
       margin-top: 10px;
-      padding: 12px;
+      padding: 12px 25px;
       background: #4a90e2;
       color: white;
+      border-radius: 25px;
       text-decoration: none;
-      border-radius: 8px;
     }
-
-    a:hover {
-      background: #357bd8;
-    }
-
-    button {
-      padding: 15px 25px;
-      font-size: 16px;
-      border: none;
-      border-radius: 20px;
-      background: #4a90e2;
-      color: white;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-
-    button:hover {
-      background: #357bd8;
-    }
-    h1 {
-  font-size: 40px;
-}
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 28px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-
-  .box {
-    margin: 15px;
-    padding: 20px;
-  }
-}
     .menu {
   background: white;
   padding: 15px;
@@ -126,16 +62,6 @@ transition: all 0.6s ease;
   color: #333;
   font-weight: bold;
 }
-
-.menu a:hover {
-  color: #4a90e2;
-}
-    @keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
   </style>
 </head>
 
@@ -144,110 +70,45 @@ transition: all 0.6s ease;
   <a href="#accueil">Accueil</a>
   <a href="#services">Services</a>
   <a href="#rdv">Rendez-vous</a>
-  <a href="#contact">Contact</a>
 </div>
 
-  <div class="container" id="accueil">
-  <h2>🧠 Services proposés</h2>
-      
-    <p>✔️ Gestion du stress et de l’anxiété</p>
-    <p>✔️ Soutien émotionnel</p>
-    <p>✔️ Difficultés personnelles</p>
-    <p>✔️ Écoute et accompagnement</p>
-  </div>
-
-    <h1>🧠 Espace Sérénité</h1>
-<p><strong>Cabinet de psychologie en ligne</strong></p>
-<p style="font-size:18px; max-width:600px; margin:auto;">
-Un espace d’écoute bienveillant pour vous accompagner
-dans votre bien-être mental, en toute confidentialité.
-</p>
-
-    <div class="box" id="rdv">
-  <h2>📅 Prendre rendez-vous</h2>
-  <p>Clique ci-dessous pour choisir un créneau et réserver une séance.</p>
-
-  <a href="https://forms.gle/MbPcuHG54QxdZSWk6" target="_blank" class="btn">
-    Réserver un rendez-vous
-  </a>
+<div class="container">
+  
+<div class="box">
+  <h2>🧠 Services</h2>
+  <p>✔️ Gestion du stress</p>
+  <p>✔️ Soutien émotionnel</p>
+  <p>✔️ Accompagnement</p>
 </div>
-
-
-    <button onclick="alert('Votre bien-être est ma priorité 🧠')">
-  💬 Message important
-</button>
-    <div class="box">
-  <h2>👤 À propos</h2>
-  <p>
-  Psychologue spécialisé(e) dans le bien-être mental.
-  Consultations en ligne simples et confidentielles.
-  </p>
-</div>
-  <div class="box">
-  <h2>🔒 Confidentialité</h2>
-  <p>
-  Toutes les consultations sont confidentielles et sécurisées.
-  </p>
-</div>
-    <div class="box">
-  <h2>⭐ Témoignages</h2>
-  <p>“Je me sens beaucoup mieux depuis que je consulte.” — Marie</p>
-  <p>“Une écoute incroyable et sans jugement.” — Lucas</p>
-  <p>“Je recommande à 100%.” — Sarah</p>
-</div>
-    <div class="box">
-  <h2>🕒 Horaires</h2>
-  <p>Vendredi : 17h30 - 21h30</p>
-  <p>Samedi : 11h30 - 21h30</p>
-  <p>Dimanche : 11h30 - 19h45</p>
-  <p>Vacances : 17h30 - 21h45</p>
-</div>
-    <div class="box">
-  <h2>📆 Créneaux disponibles</h2>
-
-<p>Matin :</p>
-<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">11h30</a>
-<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">12H00</a>
-<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">12h30</a>
-
-<p>Après-midi :</p>
-<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">14h30</a>
-<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">15h00</a>
-<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">16h30</a>
-
-<p>Soir :</p>
-<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">18h30</a>
-<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">19h45</a>
-<a href="https://forms.gle/MbPcuHG54QxdZSWk6" class="btn">20h30</a>
-      
+  <h1>🧠 Espace Sérénité</h1>
+  <p>Cabinet de psychologie en ligne</p>
 
 </div>
-    <div class="box">
-  <h2>🔐 Mentions légales</h2>
-  <p>
-  Ce site vous permet de parler a un psychologue 
-    professionel.
-  </p>
-</div>
+<!-- CHAT TAWK.TO -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a25eb87be9ae91c2b2ded0c/1jqi20329';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+  <script>
+const boxes = document.querySelectorAll('.box');
 
-<div class="box" id="contact">
-  <h2>📩 Contact</h2>
-  <p>Vous pouvez utiliser le chat en bas à droite pour nous écrire directement.</p>
-</div>
-    
-  <!-- CHAT TAWK.TO -->
-  <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/6a25eb87be9ae91c2b2ded0c/1jqi20329';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
+window.addEventListener('scroll', () => {
+  boxes.forEach(box => {
+    const boxTop = box.getBoundingClientRect().top;
+    const trigger = window.innerHeight - 100;
 
+    if (boxTop < trigger) {
+      box.classList.add('visible');
+    }
+  });
+});
+</script>
 </body>
 </html>
-
